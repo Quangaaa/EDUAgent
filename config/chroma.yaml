@@ -1,0 +1,10 @@
+collection_name: edu-agent
+persist_directory: chroma_db
+k: 3
+uploaded_dir: uploaded_files
+md5_hex_store: md5.txt
+allow_file_types: [".txt", ".pdf", ".docx"]
+
+chunk_size: 200
+chunk_overlap: 20
+separators: ["\n\n", "\n", " ", "", "!",".", ",", "?", ";", ":", "！", "，", "。", "？", "；", "："]

@@ -1,0 +1,2 @@
+token_expire_hours: 24
+sqlite_user_db_path: user_data.db

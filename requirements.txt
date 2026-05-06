@@ -1,0 +1,24 @@
+fastapi==0.116.1
+uvicorn==0.35.0
+pydantic==2.11.7
+python-multipart==0.0.20
+PyYAML==6.0.2
+
+# LangChain / Agent / RAG
+langchain==0.3.27
+langchain-core==0.3.74
+langchain-community==0.3.29
+langchain-text-splitters==0.3.11
+langchain-chroma==0.2.6
+langgraph==0.6.7
+
+# Vector store backend
+chromadb==1.0.20
+
+# File parsing
+pypdf==5.9.0
+docx2txt==0.9
+
+# Optional DB driver (kept for future MySQL migration)
+sqlalchemy==2.0.44
+pymysql==1.1.2

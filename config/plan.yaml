@@ -1,0 +1,15 @@
+plan_name: edu-plan-service
+
+default_horizon_days: 7
+default_daily_minutes: 30
+default_grade: 初中
+default_subject: 数学
+
+clarification:
+  enabled: true
+  ask_when_target_missing: true
+  fallback_to_chat: true
+
+output:
+  include_risk_points: true
+  include_daily_criteria: true

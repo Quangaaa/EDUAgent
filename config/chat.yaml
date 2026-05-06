@@ -1,0 +1,25 @@
+chat_name: edu-chat-service
+
+response:
+  stream_enabled: false
+  temperature: 0.3
+  timeout_seconds: 60
+
+history:
+  max_history_turns: 20
+  truncate_strategy: latest
+
+safety:
+  enable_guardrail: true
+
+upload:
+  allowed_file_types:
+    - .txt
+    - .md
+    - .csv
+    - .json
+    - .yaml
+    - .xml
+    - .log
+    - .pdf
+    - .docx

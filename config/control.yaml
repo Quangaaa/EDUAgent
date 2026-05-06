@@ -1,0 +1,19 @@
+app_name: edu-agent-runtime
+
+modules:
+  chat_enabled: true
+  agent_enabled: true
+  plan_enabled: true
+
+routing:
+  default_mode: agent
+  allow_modes: ["chat", "agent", "plan"]
+  invalid_mode_fallback: chat
+
+session:
+  use_dialogue_history: true
+  delete_vector_on_session_delete: true
+
+observability:
+  log_level: INFO
+  trace_enabled: true

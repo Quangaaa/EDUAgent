@@ -1,0 +1,31 @@
+agent_name: edu-agent-mvp
+max_iterations: 6
+default_task_type: general
+
+education:
+  default_grade: 初中
+  default_subject: 数学
+  answer_style: structured
+  enable_personalization: true
+  enable_safety_guardrail: true
+
+strategy:
+  evidence_first: true
+  require_uncertainty_statement: true
+  low_confidence_action: ask_for_more_context
+
+planning:
+  default_horizon_days: 7
+  default_daily_minutes: 30
+
+mode_keywords:
+  plan: ["学习计划", "制定计划", "计划", "规划", "学习路径", "复习计划", "安排"]
+  chat: ["聊一聊", "聊聊", "对话", "随便聊", "闲聊", "陪我聊"]
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: your_password_here
+  name: edu_agent
+  charset: utf8mb4
